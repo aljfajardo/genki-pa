@@ -16,8 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PracticeKanaActivity"
-            android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".PracticeKanaActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullscreenTheme"/>
+        <activity
+            android:name=".PracticeParametersActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_practice_parameters"
+            android:theme="@style/FullscreenTheme" />
     </application>
 
 </manifest>

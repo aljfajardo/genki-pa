@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickPracticeKana(View view) {
-        Intent intent = new Intent(this, PracticeKanaActivity.class);
+        Intent intent = new Intent(this, PracticeParametersActivity.class);
         startActivity(intent);
     }
 
