@@ -3,4 +3,33 @@
     <string name="button_kana_practice">Practice Kana</string>
     <string name="button_course_content">Course Content</string>
     <string name="button_practice_content">Practice Content</string>
+
+    <string name="button_next_char">Next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- hiragana strings -->
+    <string name="a_hiragana">あいうえお</string>
+    <string name="ka_hiragana">かきくけこ</string>
+    <string name="sa_hiragana">さしすせそ</string>
+    <string name="ta_hiragana">たちつてと</string>
+    <string name="na_hiragana">なにぬねの</string>
+    <string name="ha_hiragana">はひふへほ</string>
+    <string name="ma_hiragana">まみむめも</string>
+    <string name="ya_hiragana">やゆよ</string>
+    <string name="ra_hiragana">らりるれろ</string>
+    <string name="wa_n_hiragana">わをん</string>
+
+    <!-- katakana strings -->
+    <string name="a_katakana">アイウエオ</string>
+    <string name="ka_katakana">カキクケコ</string>
+    <string name="sa_katakana">サシスセソ</string>
+    <string name="ta_katakana">タチツテト</string>
+    <string name="na_katakana">ナニヌネノ</string>
+    <string name="ha_katakana">ハヒフヘホ</string>
+    <string name="ma_katakana">マミムメモ</string>
+    <string name="ya_katakana">ヤユヨ</string>
+    <string name="ra_katakana">ラリルレロ</string>
+    <string name="wa_n_katakana">ワヲン</string>
 </resources>
