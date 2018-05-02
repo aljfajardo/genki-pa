@@ -1,6 +1,7 @@
 package com.example.android.learningaid.util;
 
 import com.example.android.learningaid.Kana;
+
 import com.example.android.learningaid.R;
 
 import java.util.ArrayList;
@@ -13,7 +14,6 @@ import java.util.Map;
  */
 
 public class KanaDBUtil {
-
     private static final List<Kana> HIRA_A = new ArrayList<Kana>() {
         {
             add(new Kana("a", "あ", Kana.HIRAGANA));
