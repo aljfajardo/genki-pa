@@ -16,6 +16,7 @@ local.properties
 .idea/workspace.xml
 .idea/tasks.xml
 .idea/.name
+.idea/caches/
 .idea/codeStyles
 .idea/compiler.xml
 .idea/copyright/profiles_settings.xml
