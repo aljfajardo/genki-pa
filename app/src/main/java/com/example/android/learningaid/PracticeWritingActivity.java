@@ -14,12 +14,6 @@ public class PracticeWritingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practice_writing);
     }
-
-    @Override
-    public boolean onNavigateUp() {
-        super.onDestroy();
-        return super.onNavigateUp();
-    }
     
     public void onClickClear(View view) {
         DrawingView drawingView = findViewById(R.id.drawing_view);
