@@ -13,6 +13,11 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/button_kana_writing"
+        android:onClick="onClickPracticeWriting"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="@string/button_course_content"
         android:onClick="onClickCourseContent"/>
     <Button
@@ -20,16 +25,4 @@
         android:layout_height="wrap_content"
         android:text="@string/button_practice_content"
         android:onClick="onClickPracticeContent"/>
-
-    <FrameLayout
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:padding="16dp">
-
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_lessons"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </FrameLayout>
 </LinearLayout>

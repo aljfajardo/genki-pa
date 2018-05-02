@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Learning Aid</string>
     <string name="button_kana_practice">Practice Kana</string>
+    <string name="button_kana_writing">Writing Kana</string>
     <string name="button_course_content">Course Content</string>
     <string name="button_practice_content">Practice Content</string>
 
@@ -33,9 +34,11 @@
     <string name="ra_katakana">ラリルレロ</string>
     <string name="wa_n_katakana">ワヲン</string>
 
+    <string name="canvas_clear">Clear</string>
+    <string name="canvas_next">Next</string>
+
     <string name="title_activity_practice_parameters">PracticeParametersActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
-
     <string name="title_activity_fullscreen">FullscreenActivity</string>
 </resources>
