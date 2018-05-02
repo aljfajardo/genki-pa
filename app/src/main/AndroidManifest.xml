@@ -24,6 +24,7 @@
             android:name=".PracticeParametersActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_practice_parameters"
+            android:parentActivityName=".MainActivity"
             android:theme="@style/FullscreenTheme" />
     </application>
 
