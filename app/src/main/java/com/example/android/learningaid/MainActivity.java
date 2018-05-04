@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private Toast mToast;
+    public static final String NEXT_ACTIVITY_KEY = "nextActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,11 +20,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickPracticeKana(View view) {
         Intent intent = new Intent(this, PracticeParametersActivity.class);
+        intent.putExtra(NEXT_ACTIVITY_KEY, "quiz");
         startActivity(intent);
     }
 
     public void onClickPracticeWriting(View view) {
-        Intent intent = new Intent(this, PracticeWritingActivity.class);
+        Intent intent = new Intent(this, PracticeParametersActivity.class);
+        intent.putExtra(NEXT_ACTIVITY_KEY, "writing");
         startActivity(intent);
     }
 

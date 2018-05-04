@@ -1,6 +1,7 @@
 package com.example.android.learningaid;
 
 import android.annotation.TargetApi;
+import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -86,6 +87,11 @@ public class PracticeKanaActivity extends AppCompatActivity {
         generateQuestion();
     }
 
+    @Override
+    public void onBackPressed() {
+        NavUtils.navigateUpFromSameTask(this);
+    }
+
     public void onButtonChoiceClick(View view) {
         Kana kana = (Kana) view.getTag();
         Log.d("DEBUG", kana.getCharacter());
@@ -140,11 +146,4 @@ public class PracticeKanaActivity extends AppCompatActivity {
 
         }
     }
-
-    @Override
-    public boolean onNavigateUp() {
-        super.onDestroy();
-        return super.onNavigateUp();
-    }
-
 }
