@@ -18,17 +18,17 @@
         <activity
             android:name=".PracticeKanaActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".PracticeWritingActivity"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".PracticeParametersActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_practice_parameters"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/FullscreenTheme" />
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

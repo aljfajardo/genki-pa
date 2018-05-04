@@ -6,16 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * An example full-screen activity that shows and hides the system UI (i.e.
- * status bar and navigation/system bar) with user interaction.
- */
 public class PracticeParametersActivity extends AppCompatActivity {
-
+    private Toast toast;
     private ArrayList<Integer> practiceSet;
     private static final String TAG = "PracticeParamsActivity";
     public static final String PRACTICE_SET_KEY = "practiceSet";
@@ -54,12 +51,25 @@ public class PracticeParametersActivity extends AppCompatActivity {
     public void onClickNext(View view) {
         Log.d(TAG, "Beginning quiz with following kana sets: ");
         ArrayList<String> kanalist = new ArrayList<>();
-        for(int i: practiceSet) {
-            kanalist.add(getResources().getResourceName(i));
+        if (practiceSet.size() > 0) {
+            for(int i: practiceSet) {
+                kanalist.add(getResources().getResourceName(i));
+            }
+            Log.d(TAG, kanalist.toString());
+            Intent intent;
+            if (getIntent().getExtras().getString(MainActivity.NEXT_ACTIVITY_KEY).equals("quiz")) {
+                intent = new Intent(this, PracticeKanaActivity.class);
+            } else {
+                intent = new Intent(this, PracticeWritingActivity.class);
+            }
+            intent.putIntegerArrayListExtra(PRACTICE_SET_KEY, practiceSet);
+            startActivity(intent);
+        } else {
+            if (toast != null) {
+                toast.cancel();
+            }
+            toast = Toast.makeText(this, R.string.parameters_make_selection_toast, Toast.LENGTH_LONG);
+            toast.show();
         }
-        Log.d(TAG, kanalist.toString());
-        Intent intent = new Intent(this, PracticeKanaActivity.class);
-        intent.putIntegerArrayListExtra(PRACTICE_SET_KEY, practiceSet);
-        startActivity(intent);
     }
 }
